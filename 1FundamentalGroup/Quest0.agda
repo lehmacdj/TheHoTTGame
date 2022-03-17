@@ -57,7 +57,7 @@ isoEmpty→pathEmpty : (A : Type) → isoEmpty A → pathEmpty A
 isoEmpty→pathEmpty A = λ x → isoToPath x
 
 pathEmpty→toEmpty : (A : Type) → pathEmpty A → toEmpty A
-pathEmpty→toEmpty A = λ x → pathToFun x 
+pathEmpty→toEmpty A = λ x → pathToFun x
 
 ------------------- Side Quests - true≢false --------------------
 
