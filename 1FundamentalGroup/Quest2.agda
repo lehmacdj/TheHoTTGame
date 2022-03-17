@@ -52,7 +52,7 @@ Path≡⊔NoConfusion {A} {B} x y = isoToPath i where
   i : (x ≡ y) ≅ (⊔NoConfusion x y)
   i = iso (to x y) (from x y) (s x y) (r x y) where
     s : (x y : A ⊔ B) -> section (to x y) (from x y)
-    s (inl x) (inl y) = J (λ y' p -> to (inl x) (inl y') (from (inl x) (inl y') p) ≡ p) (JRefl {!λ y' p -> ⊔NoConfusion x y'!} {!!})
+    s (inl x) (inl y) = J (λ y' p -> to (inl x) (inl y') (from (inl x) (inl y') p) ≡ p) ?
     s (inr x) (inr y) = {!!}
 
     r : (x y : A ⊔ B) -> retract (to x y) (from x y)
